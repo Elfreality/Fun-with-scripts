@@ -1,0 +1,81 @@
+Workstation audit 
+
+
+Uptime and current users: 
+ 14:28:10 up  7:10,  1 user,  load average: 0.17, 0.22, 0.28
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+elf      :0       :0               07:23   ?xdm?  52:25   0.04s /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu 
+
+
+Recent logins: 
+elf      :0           :0               Thu Mar 25 07:23   still logged in
+reboot   system boot  5.8.0-48-generic Thu Mar 25 07:17   still running
+
+wtmp begins Thu Mar 25 07:17:59 2021 
+
+
+Top-10 processes by RAM/CPU usage: 
+USER       UID COMMAND             PID %CPU %MEM
+elf       1000 firefox           12265  5.8 16.4
+elf       1000 Web Content       12353  4.2 18.6
+elf       1000 gnome-shell        3734  2.3  7.5
+elf       1000 notepad-plus-pl    9033  2.1  1.6
+elf       1000 Xorg               3528  1.5  1.6
+elf       1000 wineserver         8975  1.2  0.5
+root         0 bash              14816  1.0  0.1
+elf       1000 winedevice.exe     8991  0.8  0.0
+root         0 vmtoolsd           1561  0.5  0.1 
+
+
+
+top - 14:28:10 up  7:10,  1 user,  load average: 0.17, 0.22, 0.28
+Tasks: 301 total,   1 running, 300 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  8.3 us,  8.3 sy,  0.0 ni, 83.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1958.4 total,     70.3 free,   1460.1 used,    427.9 buff/cache
+MiB Swap:    923.3 total,    324.9 free,    598.4 used.    301.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  14823 root      20   0   20620   3744   3096 R  12.5   0.2   0:00.04 top
+  12265 elf       20   0 3746360 330408  88404 S   6.2  16.5   6:19.21 firefox
+  12353 elf       20   0 3059204 374596 103500 S   6.2  18.7   4:38.57 Web Co+
+      1 root      20   0  103528   6200   3504 S   0.0   0.3   0:12.79 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthrea+
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_pa+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_per+
+     10 root      20   0       0      0      0 S   0.0   0.0   0:02.22 ksofti+ 
+
+
+Open TCP/UDP ports: 
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      649/systemd-resolve 
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      695/cupsd           
+tcp6       0      0 ::1:631                 :::*                    LISTEN      695/cupsd            
+
+
+Virtual Memory Usage: 
+              total        used        free      shared  buff/cache   available
+Mem:        2005388     1495188       69176       28312      441024      307096
+Swap:        945416      612716      332700
+Total:      2950804     2107904      401876 
+
+
+Usage of disk space: 
+Filesystem      Size  Used Avail Use% Mounted on
+udev            951M     0  951M   0% /dev
+tmpfs           196M  1.7M  195M   1% /run
+/dev/sda5        20G  8.8G  9.4G  49% /
+tmpfs           980M     0  980M   0% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           980M     0  980M   0% /sys/fs/cgroup
+/dev/loop0       56M   56M     0 100% /snap/core18/1988
+/dev/loop2       65M   65M     0 100% /snap/gtk-common-themes/1514
+/dev/loop1      219M  219M     0 100% /snap/gnome-3-34-1804/66
+/dev/loop3       32M   32M     0 100% /snap/snapd/11036
+/dev/loop4       52M   52M     0 100% /snap/snap-store/518
+/dev/sda1       511M  4.0K  511M   1% /boot/efi
+tmpfs           196M  128K  196M   1% /run/user/1000
+/dev/loop5      5.7M  5.7M     0 100% /snap/notepad-plus-plus/260
+/dev/loop6      304M  304M     0 100% /snap/wine-platform-5-stable/16
+/dev/loop7      163M  163M     0 100% /snap/gnome-3-28-1804/145
+/dev/loop8      338M  338M     0 100% /snap/wine-platform-runtime/216
